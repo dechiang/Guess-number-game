@@ -6,17 +6,20 @@
 import random
 
 r = random.randint(0, 100)
+count = 0
 
 print('The answer is an integer from 1 ~ 100')
 
 while True:
+	count += 1 # count = count + 1
 	guess = input('Please enter your guess: ')
 	guess = int(guess)
-	
 	if guess == r:
 		print('your guess is correct!')
+		print('you have guessed', count, 'times')
 		break
 	elif guess >= r:
 		print('your guess is bigger than the answer')
 	else:
 		print('your guess is smaller than the answer')
+	print('you have guessed', count, 'times')
