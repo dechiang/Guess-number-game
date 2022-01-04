@@ -5,10 +5,15 @@
 
 import random
 
-r = random.randint(0, 100)
+start = input('please enter a start integer: ')
+end = input('please enter an end integer: ')
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 count = 0
 
-print('The answer is an integer from 1 ~ 100')
+print('The answer is an integer from', start, 'to', end)
 
 while True:
 	count += 1 # count = count + 1
